@@ -1,32 +1,22 @@
-import Account from "./account.js";
-//import {Account, AccountController} from "./account.js"; //can also import classes this way
+import {Account} from "./account.js";
+//import Account from "./account.js"; //this import fails bcos the Account class is not wrapped in {} brackets
 
 const checkingAccount = new Account ("Simon Dean", 25);
 
 test("Testing balance", () => {
-    expect(checkingAccount.balance).toBe(5);
-    //expect(checkingAccount.balance).toBe(25);
+    expect(checkingAccount.balance).toBe(25);
 });
 
 test("Testing deposit", () => {    
-    expect(myAccount.deposit(50)).toBe(Number(250).toFixed(2)); 
-    expect(myAccount.deposit(-50)).toBe("Amount entered is negative");
-    expect(myAccount.deposit(500)).toBe(Number(750).toFixed(2));   
-});
-
-test("Testing _isAllowed", () => {
-    expect(myAccount._isAllowed(50)).toBe(true);
-    expect(myAccount._isAllowed(1550)).toBe(false);
+    expect(checkingAccount.deposit(10)).toBe(Number(35).toFixed(2)); 
+    expect(checkingAccount.deposit(-5)).toBe("Amount entered is negative");
+    console.log(checkingAccount.balance);
+    expect(checkingAccount.deposit(50)).toBe(Number(85).toFixed(2));  
 });
 
 test("Testing withdraw", () => {
-     expect(myAccount.withdraw(50)).toBe(Number(700).toFixed(2));
-     expect(myAccount.withdraw(-50)).toBe("Amount is negative");
-     expect(myAccount.withdraw(1250)).toBe("Insufficient balance");
-});
-
-test("Testing transfer", () => {
-    expect(myAccount.transfer(50)).toBe(Number(650).toFixed(2));
-    expect(myAccount.transfer(-50)).toBe("Amount is negative");
-    expect(myAccount.transfer(1250)).toBe("Insufficient balance");
+     expect(checkingAccount.withdraw(80)).toBe(Number(5).toFixed(2));
+     console.log(checkingAccount.balance);
+     expect(checkingAccount.withdraw(-50)).toBe("Amount is negative");
+     expect(checkingAccount.withdraw(1250)).toBe("Insufficient balance");
 });

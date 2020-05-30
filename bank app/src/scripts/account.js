@@ -15,9 +15,8 @@ export class Account {
     withdraw(amt) {
         //let amount = parseFloat(amt);
         if (amt > 0 && this.balance - amt >= 0) {
-            this.balance -= amt;
             // console.log(`Withdraw: ${this.name} new balance is ${this.balance}`);
-            return (this.balance).toFixed(2);
+            return (this.balance -= amt).toFixed(2);
         } else if (amt < 0) {
             return "Amount is negative"
         } else {
