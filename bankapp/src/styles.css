@@ -1,0 +1,40 @@
+body {
+    padding:0;
+    margin: 0;
+    background-color: aliceblue;
+}
+
+#h1 {
+    margin-left: 10px;   
+}
+
+#acctContainer {
+    margin: 5px 5px 5px 5px;
+    border-width: 1px;
+    border-style: solid;
+    height: auto; 
+}
+
+#newAcct {
+    margin: 10px 10px 10px 10px;
+    border-width: 1px;
+    border-style: solid;
+    height: auto; 
+    padding: 5px 5px 5px 5px;
+}
+
+#acctTrxBar {
+    margin: 10px 10px 10px 10px;
+    border-width: 1px;
+    border-style: solid;
+    height: auto; 
+    padding: 5px 5px 5px 5px;
+}
+
+#accountInfo {
+    margin: 10px 10px 10px 10px;
+    border-width: 1px;
+    border-style: solid;
+    height: auto; 
+    padding: 5px 5px 5px 5px;
+}

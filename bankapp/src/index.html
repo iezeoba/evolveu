@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Bank App</title>
+</head>
+
+<body>
+    <div id="acctContainer" class="clAcctUserIntface">
+        <h1 id="h1">Welcome!</h1>
+        <div id="newAcct">
+            <p>Get New Account</p>
+            <span class="clSpan">Enter Account Name <input id="acctName"> Enter Account Type <input
+                    id="acctType"></span>
+            <button id="createAcct">Create Account</button>
+        </div>
+        <div id="acctTrxBar">
+            <span>Account <select id="dropdownTrxn" name="accountsTrxn"></select>
+                <span class="clSpan"><input id="idAmount" type="number" required placeholder="Enter amount"></span>
+                <button id="idDeposit">Deposit</button>
+                <button id="idWithdraw">Withdraw</button>
+        </div>
+        <div id="accountInfo">
+
+        </div>
+    </div>
+    <script src="./scripts/index.js" type="module"></script>
+</body>
+
+</html>
