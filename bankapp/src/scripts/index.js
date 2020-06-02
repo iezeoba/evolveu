@@ -7,17 +7,22 @@ createAcct.addEventListener("click", newCard, newAccount);
 
 function newCard() {
 const div = document.createElement("div");
-div.classList.add("clAcctCard");
 div.id = "acctCard";
-const name = document.createTextNode("acctName.value");
-div.appendChild(name);
+div.classList.add("clAcctInfoCard");
 
-const type = document.createTextNode("acctType.value");
-div.appendChild(type);
+const name = document.createElement("p");
+name.textContent = "Name: " + "acctName.value";
+div.append(name);
 
-const bal = document.createTextNode("this.balance");
-div.appendChild(bal);
-document.getElementById("acctInfo").appendChild(div);
+const type = document.createElement("p");
+type.textContent = "Type: " + "acctType.value" 
+name.append(type);
+
+const balance = document.createElement("p");
+balance.textContent = "Balance: " + "this.balance" 
+type.append(balance);
+
+document.getElementById("acctCard").appendChild(div);
 }
 
 function newAccount() {
@@ -28,4 +33,8 @@ if (Object.keys(newUser).includes("name") === false) {
     newUser.name = acctName.value;
     newUser.balance = 0;
 }
+    // ---------- USER EXISTS AND HAS AN ACCOUNT ---------- 
+    //  else if () {
+
+    //  }
 }

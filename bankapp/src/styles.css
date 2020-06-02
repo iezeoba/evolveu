@@ -31,7 +31,7 @@ body {
     padding: 5px 5px 5px 5px;
 }
 
-#acctInfo {
+#acctCard {
     margin: 10px 10px 10px 10px;
     border-width: 1px;
     border-style: solid;
@@ -39,11 +39,11 @@ body {
     padding: 5px 5px 5px 5px;
 }
 
-.clAcctCard {
+.clAcctInfoCard {
     margin: 10px 10px 10px 10px;
     border-width: 1px;
     border-style: solid;
-    height: 150px; 
-    width: 150px;
+    height: auto; 
+    width: 200px;
     padding: 5px 5px 5px 5px; 
 }
