@@ -32,6 +32,8 @@ body {
 }
 
 #acctCard {
+    display: flex;
+    flex-direction: row;
     margin: 10px 10px 10px 10px;
     border-width: 1px;
     border-style: solid;
@@ -43,6 +45,7 @@ body {
     margin: 10px 10px 10px 10px;
     border-width: 1px;
     border-style: solid;
+    border-radius: 4px;
     height: auto; 
     width: 200px;
     padding: 5px 5px 5px 5px; 

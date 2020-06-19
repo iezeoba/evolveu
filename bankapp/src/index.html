@@ -13,8 +13,16 @@
         <h1 id="h1">Welcome!</h1>
         <div id="newAcct">
             <p>Get New Account</p>
-            <span class="clSpan">Enter Account Name <input id="acctName"> Enter Account Type <input
-                    id="acctType"></span>
+            <form action="#" id="accountList"></form>
+            <span class="clSpan">Enter Account Name <input id="acctName"> Select Account Type <select id="dropdown"
+                    name="accounts"></span>
+            <option value="Select">Select</option>
+            <option value="Checking Account">Checking Account</option>
+            <option value="Savings Account">Savings Account</option>
+            <option value="Credit Card">Credit Card</option>
+            <option value="RESP Account">RESP Account</option>
+            </select><br><br>
+            </form>
             <button id="createAcct">Create Account</button>
         </div>
         <div id="acctTrxBar">
